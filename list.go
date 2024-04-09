@@ -26,7 +26,7 @@ func (l *LinkedList[T]) Insert(t T) {
 			prev: nil,
 			val:  t,
 		}
-		l.tail = l.head
+		l.tail = l.head.next
 	} else {
 
 		c := l.head
